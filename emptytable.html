@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="">
+<script>
+   var im= document.getElementsByTagName("img")
+
+   var srcc= localStorage.getItem("image");
+console.log(srcc);
+var da=JSON.parse(srcc)
+  
+ im[0].setAttribute("src",da["image"],)
+im[0].style.width="100px";
+
+
+</script>
+</body>
+</html> 
